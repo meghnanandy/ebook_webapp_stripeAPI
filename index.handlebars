@@ -1,0 +1,28 @@
+<section class="py-2">
+    <div  class="row">
+        <div class="col-md-6 text-center">
+            <h1 class="display-3 mt-3 pt-5">
+                Murder On The Orient by Agatha Christie
+            </h1>
+            <p class="lead">A murder is discovered, and Poirot's trip home to London from the Middle East is interrupted to solve the murder.</p>
+            <form action="/charge" method="POST">
+                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                        data-key="pk_test_51HPHkOIhi6EjqRHzE9STjji2Zk1HRQC75f55BuAA52PlPoatIa2KRfkyZ4VRSJNn9VHDGSg5kiPEZG8oMj1Lb1BK00sq7MqVXk"
+                        data-amount="500"
+                        data-name="Murder On The Orient"
+                        data-description="Ebook written by Agatha Christie"
+                        data-image="/img/marketplace.png"
+                        data-locale="auto">
+                </script>
+                <script>
+                    //hide default stripe button
+                    document.getElementsByClassName('stripe-button-el')[0].style.display = 'none';
+                </script>
+                <button type="submit" class="btn btn-outline-dark text-white btn-lg">Purchase for Rs.500</button>
+            </form>
+</div>
+        <div class="col-md-6">
+            <img src="/img/book.jpg" alt="" class="img-fluid">
+        </div>
+    </div>
+</section>
